@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to handle login
 function login(username, password) {
     console.log("Username:", username, "Password:", password);  // Log to check if values are correct
-    fetch('mysql://udnflurgmxobnkb2:VKbuMTlOxMLIYZzmJbUU@bzhvpolpef4qbb5gvv76-mysql.services.clever-cloud.com:3306/bzhvpolpef4qbb5gvv76', {
+    fetch('/login', { // Change the URL to the login endpoint
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -68,20 +68,21 @@ function check() {
         return; // Already alerts inside passvali
     }
 
-    // Include confirmpassword in the data object
+    // Prepare data object for registration
     const data = {
         name,
         email,
         newpassword,
-        confirmpassword, // Add this line
+        confirmpassword,
         year
     };
 
     registerUser(data);
 }
+
 // Function to send registration data to the server
 function registerUser(data) {
-    fetch('mysql://udnflurgmxobnkb2:VKbuMTlOxMLIYZzmJbUU@bzhvpolpef4qbb5gvv76-mysql.services.clever-cloud.com:3306/bzhvpolpef4qbb5gvv76', { // Use HTTP for local development
+    fetch('/register', { // Change the URL to the registration endpoint
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
