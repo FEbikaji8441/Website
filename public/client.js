@@ -33,7 +33,7 @@ function login(username, password) {
             if (response.ok) {
                 // Success case (e.g., status 200)
                 alert("Login successful!");
-                window.location.href = "dashboard.html";  // Redirect on success
+                window.location.href = "JawanCF.html";  // Redirect on success
             } else {
                 // Failure case (e.g., status 400)
                 alert("Login failed: " + data.message);
