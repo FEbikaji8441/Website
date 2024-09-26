@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="client.js">
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="Jawan CF.png" alt="Logo">
+        </div>
+        <div class="registrationForm">
+            <form>
+            <div class="nameandemail">
+                <label for="usernamein">Name</label><br>
+                <input type="text" id="usernamein" name="username"><br>
+                <label for="emailin">Email</label><br>
+                <input type="email" id="emailin" name="email"><br>
+            </div>
+            <div class="newandconpassword">
+                <label for="newpass">New Password</label><br>
+                <input type="password" id="newpass" name="newpassword" onkeyup="passvali(this.value)"><br>
+                <label for="conpass">Confirm Password</label><br>
+                <input type="password" id="conpass" name="confirmpassword"><br>
+                <div id="str"></div>
+            </div>
+            <div class="year">
+                <label for="year">Year:</label>
+        <select id="year" name="year">
+            <option value="">Year</option>
+            <option value="1">2000</option>
+            <option value="2">2001</option>
+            <option value="3">2002</option>
+            <option value="4">2003</option>
+            <option value="5">2004</option>
+            <option value="6">2005</option>
+            <option value="7">2006</option>
+            <option value="8">2007</option>
+            <option value="9">2008</option>
+        </select>
+            </div>
+              <div class="terms">  <input type="radio" name="option" id="category"><label for="option">By creating our account, we agree to our terms and conditions...</label></div><br>
+                <button type="button" onclick="check()">Register</button></a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

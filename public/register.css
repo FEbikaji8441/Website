@@ -1,0 +1,60 @@
+body{
+    background-image: url("Reistration-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 175px;
+    height: 175px;
+    transform: translate(230px,0px);
+}
+.registrationForm form{
+    text-align: left;
+    transform: translate(-85px,0px);
+}
+.registrationForm label{
+    font-size:x-large;
+}
+.newandconpassword{
+    transform: translate(500px,-140px);
+}
+.registrationForm input[type="text"], 
+.registrationForm input[type="password"],
+.registrationForm button[type="button"],
+.registrationForm input[type="email"]
+ {
+    font-size: 18px;
+    padding: 10px 20px; 
+    width: 80%; 
+    max-width: 300px; 
+    border: solid #ccc;
+    border-radius: 20px; 
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+.terms
+{
+    transform: translate(100px,-80px);
+}
+.registrationForm button[type="button"]
+{
+    font-size: 25px;
+    transform: translate(250px,-30px);
+    background:linear-gradient(to right,rgb(9, 167, 130),rgb(20, 226, 30));
+    cursor: pointer;
+    border: none;
+    border-radius: 20px; 
+    padding: 10px 20px;
+    width: 80%; 
+}
+.year{
+    transform: translate(0px,-130px);
+    cursor: pointer;
+}

@@ -1,0 +1,90 @@
+body {
+    background-image: url("Login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    width: 300px; 
+    height: auto; 
+    display: block;
+    margin: 20px auto;
+}
+
+.login-form {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.login-form form {
+    text-align: left; 
+}
+.login-form label{
+    margin-left: 130px;
+    font-size:x-large;
+
+}
+
+.login-form input, .login-form button {
+    display: block;
+    margin: 10px auto; 
+}
+
+.login-form input[type="text"], 
+.login-form input[type="password"],
+.login-form button[type="submit"],
+.login-form button[type="button"] {
+    font-size: 18px;
+    padding: 10px 20px; 
+    width: 80%; 
+    max-width: 300px; 
+    border: solid #ccc;
+    border-radius: 20px; 
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.log button[type="button"] 
+ {  
+    background:linear-gradient(to right,rgb(9, 167, 130),rgb(20, 226, 30));
+    cursor: pointer;
+    border: none;
+    border-radius: 20px; 
+    padding: 10px 20px;
+    width: 80%; 
+}
+.reg button[type="button"]
+{
+    background:none;
+    cursor: pointer;
+    border: none; 
+    padding: 10px 20px;
+    width: 80%; 
+}
+.login-form a{
+    text-decoration: none;
+}
+.for{
+    transform: translate(250px,-10px);
+}
