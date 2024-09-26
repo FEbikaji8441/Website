@@ -26,7 +26,7 @@ const db = mysql.createConnection({
     host: "",
     user: "",
     password: "",
-    database: ''  // Use the "Jawan" database
+    database: ""  // Use the "Jawan" database
 });
 
 // Connect to the database
