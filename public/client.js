@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to handle login
 function login(username, password) {
     console.log("Username:", username, "Password:", password);  // Log to check if values are correct
-    fetch('http://localhost:3000/login', {
+    fetch('bzhvpolpef4qbb5gvv76-mysql.services.clever-cloud.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ function check() {
 }
 // Function to send registration data to the server
 function registerUser(data) {
-    fetch('http://localhost:3000/register', { // Use HTTP for local development
+    fetch('bzhvpolpef4qbb5gvv76-mysql.services.clever-cloud.com', { // Use HTTP for local development
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
