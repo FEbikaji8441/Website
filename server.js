@@ -12,7 +12,7 @@ dotenv.config();
 
 // Create an Express application
 const app = express();
-//const port = 3306;
+const port = 3306;
 
 // Enable CORS to allow requests from other origins
 app.use(cors());
