@@ -98,7 +98,7 @@ function registerUser(data) {
     .then(data => {
         if (data.success) {
             alert('Registration successful');
-            window.location.href = 'login.html'; // Redirect to login page
+            window.location.href = 'Login.html'; // Redirect to login page
         } else {
             alert(data.message); // Display error message from backend
         }
