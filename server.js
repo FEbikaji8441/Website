@@ -11,7 +11,7 @@ const path = require('path');
 dotenv.config();
 
 // Create an Express application
-//const app = express();
+const app = express();
 //const port = 3306;
 
 // Enable CORS to allow requests from other origins
@@ -27,7 +27,7 @@ const db = mysql.createConnection({
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
-    port: process.env.DB_PORT || 3306 // Use the "Jawan" database
+    //port: process.env.DB_PORT || 3306 // Use the "Jawan" database
 });
 
 // Connect to the database
