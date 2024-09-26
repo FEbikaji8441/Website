@@ -23,8 +23,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Create a MySQL connection using environment variables
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
+    host: "",
+    user: "",
     password: "",
     database: ''  // Use the "Jawan" database
 });
